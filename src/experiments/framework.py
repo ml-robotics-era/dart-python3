@@ -1,6 +1,6 @@
 import time as timer
 import numpy as np
-from tools.expert import load_policy
+from expert import load_policy
 from tools import statistics, noise, utils
 from tools import learner
 from tools.supervisor import GaussianSupervisor, Supervisor
@@ -11,6 +11,8 @@ import os
 import pandas as pd
 import scipy.stats
 
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 TRIALS = 20
 
@@ -83,7 +85,7 @@ class Test(object):
         """
         # Asserting limited data per iteration. 
         # See experiments from Ho and Ermon, 2016 for sampling method
-        print "Data: " + str(len(self.lnr.X))
+        print("Data: ", str(len(self.lnr.X)))
         assert len(self.lnr.X) <= (self.params['iters'][-1] * 50)
         
         it_results = {}
@@ -112,12 +114,12 @@ class Test(object):
         it_results['sup_loss_mean'], it_results['sup_loss_std'] = np.mean(sup_losses), np.std(sup_losses)
         it_results['sim_err_mean'], it_results['sim_err_std'] = np.mean(sim_errs), np.std(sim_errs)
 
-        print "\t\tSup reward: " + str(it_results['sup_reward_mean']) + " +/- " + str(it_results['sup_reward_std'])
-        print "\t\tLnr_reward: " + str(it_results['reward_mean']) + " +/- " + str(it_results['reward_std'])
-        print "\t\tSurr loss: " + str(it_results['surr_loss_mean']) + " +/- " + str(it_results['surr_loss_std'])
-        print "\t\tSup loss: " + str(it_results['sup_loss_mean']) + "+/-" + str(it_results['sup_loss_std'])
-        print "\t\tSim err: " + str(it_results['sim_err_mean']) + " +/- " + str(it_results['sim_err_std'])
-        print "\t\tTrace: " + str(np.trace(self.sup.cov))
+        print("\t\tSup reward: ", str(it_results['sup_reward_mean']), " +/- " + str(it_results['sup_reward_std']))
+        print("\t\tLnr_reward: ", str(it_results['reward_mean']), " +/- " + str(it_results['reward_std']))
+        print("\t\tSurr loss: ", str(it_results['surr_loss_mean']), " +/- " + str(it_results['surr_loss_std']))
+        print("\t\tSup loss: " ,str(it_results['sup_loss_mean']) ,"+/-" + str(it_results['sup_loss_std']))
+        print("\t\tSim err: ", str(it_results['sim_err_mean']), " +/- " + str(it_results['sim_err_std']))
+        print("\t\tTrace: " ,str(np.trace(self.sup.cov)))
 
         return it_results
 
@@ -156,7 +158,7 @@ class Test(object):
             paths[it] = save_path
             if not os.path.exists(parent_data_dir):
                 os.makedirs(parent_data_dir)
-            print "Creating directory at " + str(save_path)
+            print("Creating directory at ", str(save_path))
 
 
         m = len(iters)
@@ -167,7 +169,7 @@ class Test(object):
         self.total_times_all = np.zeros((TRIALS))
 
         for t in range(TRIALS):
-            print "\n\nTrial: " + str(t)
+            print("\n\nTrial: " ,str(t))
             results = self.run_trial()
             total_time = results['end_time'] - results['start_time']
 
@@ -177,7 +179,7 @@ class Test(object):
             self.data_used_all[t, :] = results['data_used']
             self.total_times_all[t] = results['total_time']
 
-            print "trial time: " + str(total_time)
+            print("trial time: ", str(total_time))
             self.save_all(t + 1, paths)
 
 
@@ -205,7 +207,7 @@ class Test(object):
             total_time = total_times_all[:]
             save_path = paths[iters[i]]
 
-            print "Saving to: " + str(save_path)
+            print("Saving to: ", str(save_path))
 
 
             d = {'reward': rewards, 'surr_loss': surr_losses, 
@@ -220,18 +222,17 @@ class Test(object):
             sup_loss_mean, sup_loss_sem = np.mean(sup_losses), scipy.stats.sem(sup_losses)
             sim_err_mean, sim_err_sem = np.mean(sim_errs), scipy.stats.sem(sim_errs)
             data_used_mean, data_used_sem = np.mean(data_used), scipy.stats.sem(data_used)
-            total_time_mean, total_time_sem = np.mean(total_time), scipy.stats.sem(total_time)
-
-            print "Iteration " + str(it) + " results:"
-            print "For iteration: " + str(it)
-            print "Lnr reward: " + str(reward_mean) + ' +/- ' + str(reward_sem)
-            print "Surr loss: " + str(surr_loss_mean) + " +/- " + str(surr_loss_sem)
-            print "Sup reward: " + str(sup_reward_mean) + " +/- " + str(sup_reward_sem)
-            print "Sup loss: " + str(sup_loss_mean) + " +/- " + str(sup_loss_sem)
-            print "Sim err: " + str(sim_err_mean) + " +/- " + str(sim_err_sem)
-            print "Data used: " + str(data_used_mean) + " +/- " + str(data_used_sem)
-            print "Total time: " + str(total_time_mean) + " +/- " + str(total_time_sem)
-            print "\n\n\n"
+            total_time_mean, total_time_sem = np.mean(total_time), scipy.stats.sem(total_time),
+            print("Iteration " , str(it) , " results:")
+            print("For iteration: " , str(it))
+            print("Lnr reward: " , str(reward_mean) , ' +/- ' , str(reward_sem))
+            print("Surr loss: " , str(surr_loss_mean) , " +/- " , str(surr_loss_sem))
+            print("Sup reward: "  ,str(sup_reward_mean) , " +/- " , str(sup_reward_sem))
+            print("Sup loss: " , str(sup_loss_mean) , " +/- " , str(sup_loss_sem))
+            print("Sim err: " ,str(sim_err_mean) , " +/- " , str(sim_err_sem))
+            print("Data used: " , str(data_used_mean) , " +/- " , str(data_used_sem))
+            print("Total time: "  ,str(total_time_mean) , " +/- " , str(total_time_sem))
+            print("\n\n\n")
 
 
 

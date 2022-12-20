@@ -49,7 +49,7 @@ def sample_covariance_trajs(env, lnr, trajs, samples, T):
         cov = cov + np.dot(diff.T, diff) / float(length)
 
 
-    print "Trajs: " + str(len(trajs))
+    print("Trajs: ",str(len(trajs)))
     return cov / float(len(trajs))
 
 def sample_iso_cov_lnr(env, lnr, sup, samples, T):

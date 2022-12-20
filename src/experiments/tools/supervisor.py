@@ -22,8 +22,8 @@ class Supervisor():
     def __init__(self, policy_fn, sess):
         self.policy_fn = policy_fn
         self.sess = sess
-        with self.sess.as_default():
-            tf_util.initialize()
+        # with self.sess.as_default():
+        #     tf_util.initialize()
 
     def sample_action(self, s):
         with self.sess.as_default():

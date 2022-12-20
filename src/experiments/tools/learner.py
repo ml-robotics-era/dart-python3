@@ -31,7 +31,7 @@ class Learner():
             history = self.est.fit(X_train, y_train)
             self.one_class_error = None
             if verbose == True:
-                print "Train score: " + str(self.est.score(X_train, y_train))
+                print("Train score: ",str(self.est.score(X_train, y_train)))
             return history
 
             # return self.est.score(X_test, y_test)

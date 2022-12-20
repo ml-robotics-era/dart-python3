@@ -1,0 +1,799 @@
+Trial:  2
+[2022-12-19 18:34:32,076] Making new env: Hopper-v1
+        Iteration:  0
+        Iteration:  1
+Val_loss: 0.2626311480998993
+loss: 0.002292252378538251
+Trajs:  1
+Estimated covariance matrix: 
+[[ 0.10186192 -0.1084014  -0.01439954]
+ [-0.1084014   0.43293104 -0.01165695]
+ [-0.01439954 -0.01165695  0.03339824]]
+0.5681911967694759
+        Iteration:  2
+        Iteration:  3
+        Iteration:  4
+        Iteration:  5
+        Iteration:  6
+        Iteration:  7
+Val_loss: 0.01133708842098713
+loss: 0.0063501261904027806
+Trajs:  5
+Estimated covariance matrix: 
+[[ 0.00823142 -0.00214848  0.001316  ]
+ [-0.00214848  0.01390106  0.00102675]
+ [ 0.001316    0.00102675  0.02114836]]
+0.04328083908185362
+        Iteration:  8
+        Iteration:  9
+        Iteration:  10
+        Iteration:  11
+        Iteration:  12
+        Iteration:  13
+        Iteration:  14
+        Iteration:  15
+        Iteration:  16
+        Iteration:  17
+        Iteration:  18
+        Iteration:  19
+Val_loss: 0.016466565430164337
+loss: 0.009898775060688645
+Train score:  0.9946889500133693
+
+Data from snapshot:  5
+Data:  250
+                Sup reward:  1786.0391954335262  +/- 0.0
+                Lnr_reward:  1807.4584640527053  +/- 2.1185231500362485
+                Surr loss:  0.06808207680781682  +/- 0.004565590606143515
+                Sup loss:  0.04208295171459516 +/-0.007344187836096068
+                Sim err:  0.04309207125674458  +/- 0.00010993180281260573
+                Trace:  0.04328083908185362
+
+Train data:  250
+
+ Optimize data:  50
+Val_loss: 0.007546763401478529
+loss: 0.0037466534075180167
+Train score:  0.9976851858664304
+
+Data from snapshot:  10
+Data:  500
+                Sup reward:  1788.3690256260663  +/- 0.0
+                Lnr_reward:  1793.9599415794871  +/- 0.38170105721464115
+                Surr loss:  0.0187035637597243  +/- 0.0009944714056281073
+                Sup loss:  0.015495583725472292 +/-0.0008038258515184853
+                Sim err:  0.04445701831967721  +/- 0.0017732937988653374
+                Trace:  0.04328083908185362
+
+Train data:  500
+
+ Optimize data:  350
+Val_loss: 0.003809909336268902
+loss: 0.003793779980349407
+Train score:  0.9979833588004112
+
+Data from snapshot:  15
+Data:  750
+                Sup reward:  1781.6980772617248  +/- 0.0
+                Lnr_reward:  1795.9606765835242  +/- 0.06591150329203618
+                Surr loss:  0.01276676015307506  +/- 0.0005305997097052212
+                Sup loss:  0.01240247425933679 +/-0.0029773589735902963
+                Sim err:  0.0416805453115259  +/- 0.0009290453415833404
+                Trace:  0.04328083908185362
+
+Train data:  750
+
+ Optimize data:  350
+Val_loss: 0.003115057945251465
+loss: 0.001996372786693667
+Train score:  0.9988357251277193
+
+Data from snapshot:  20
+Data:  1000
+                Sup reward:  1789.7598818512806  +/- 0.0
+                Lnr_reward:  1782.931901967834  +/- 2.2953576984862667
+                Surr loss:  0.007307861931622028  +/- 0.001614013883286373
+                Sup loss:  0.00716912979260087 +/-0.0008786349214035893
+                Sim err:  0.043516229853474336  +/- 0.0020183862319894433
+                Trace:  0.04328083908185362
+
+Train data:  1000
+
+ Optimize data:  350
+trial time:  135.24193239212036
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it5_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  5  results:
+For iteration:  5
+Lnr reward:  1797.2092632174715  +/-  5.127846552738799
+Surr loss:  0.04792847774095005  +/-  0.01009404746344923
+Sup reward:  1789.2941019814546  +/-  2.8099916570081573
+Sup loss:  0.03928472246560785  +/-  0.0020141056859047466
+Sim err:  0.0410655684732177  +/-  0.0038741207243293396
+Data used:  298.6666666666667  +/-  1.3333333333333333
+Total time:  135.74717251459757  +/-  1.2849021783494152
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it10_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  10  results:
+For iteration:  10
+Lnr reward:  1793.4151211519945  +/-  0.5007732414013799
+Surr loss:  0.017623644115196336  +/-  0.0017782032069330975
+Sup reward:  1785.4921752701039  +/-  1.4384422561238182
+Sup loss:  0.01512024323973391  +/-  0.00153601162209723
+Sim err:  0.04143283737626919  +/-  0.0036370748005743834
+Data used:  848.6666666666666  +/-  1.3333333333333335
+Total time:  135.74717251459757  +/-  1.2849021783494152
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it15_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  15  results:
+For iteration:  15
+Lnr reward:  1786.1030674320912  +/-  5.099492551893504
+Surr loss:  0.013118981901142334  +/-  0.0021768231589521098
+Sup reward:  1786.6649453427265  +/-  2.7698782525990904
+Sup loss:  0.01248421949437923  +/-  0.0012955108204082688
+Sim err:  0.04133301717013774  +/-  0.0034375390742702734
+Data used:  1098.6666666666667  +/-  1.3333333333333335
+Total time:  135.74717251459757  +/-  1.2849021783494152
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it20_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  20  results:
+For iteration:  20
+Lnr reward:  1786.0362963865127  +/-  1.8149955008046266
+Surr loss:  0.008726969982186953  +/-  0.0007114462674874297
+Sup reward:  1785.349345738446  +/-  2.4615021451837014
+Sup loss:  0.00835922308680084  +/-  0.0006092348426216701
+Sim err:  0.041058743106114966  +/-  0.003148110057012053
+Data used:  1348.6666666666667  +/-  1.3333333333333335
+Total time:  135.74717251459757  +/-  1.2849021783494152
+
+
+
+
+
+
+Trial:  3
+[2022-12-19 18:36:47,329] Making new env: Hopper-v1
+        Iteration:  0
+        Iteration:  1
+Val_loss: 0.0952310860157013
+loss: 0.0029464371036738157
+Trajs:  1
+Estimated covariance matrix: 
+[[ 0.38472712 -0.1536646  -0.37855661]
+ [-0.1536646   0.17936264  0.13909444]
+ [-0.37855661  0.13909444  0.50599569]]
+1.0700854510068893
+        Iteration:  2
+        Iteration:  3
+        Iteration:  4
+        Iteration:  5
+        Iteration:  6
+        Iteration:  7
+Val_loss: 0.01327548362314701
+loss: 0.009163506168486744
+Trajs:  5
+Estimated covariance matrix: 
+[[ 0.00957675 -0.0028611   0.0046414 ]
+ [-0.0028611   0.02250896  0.00057497]
+ [ 0.0046414   0.00057497  0.02459254]]
+0.056678255647420885
+        Iteration:  8
+        Iteration:  9
+        Iteration:  10
+        Iteration:  11
+        Iteration:  12
+        Iteration:  13
+        Iteration:  14
+        Iteration:  15
+        Iteration:  16
+        Iteration:  17
+        Iteration:  18
+        Iteration:  19
+Val_loss: 0.0375206433236599
+loss: 0.008956867591317358
+Train score:  0.9953507399186492
+
+Data from snapshot:  5
+Data:  245
+                Sup reward:  1784.527043037411  +/- 0.0
+                Lnr_reward:  1745.2022274954888  +/- 34.183268620911925
+                Surr loss:  0.2987780123949051  +/- 0.15225240517486835
+                Sup loss:  0.05419974898298582 +/-0.007205871623448995
+                Sim err:  0.05679911275372232  +/- 0.002082534257044093
+                Trace:  0.056678255647420885
+
+Train data:  245
+
+ Optimize data:  50
+Val_loss: 0.026851285248994827
+loss: 0.006215359532762551
+Train score:  0.9953348734416068
+
+Data from snapshot:  10
+Data:  456
+                Sup reward:  1780.3975054000482  +/- 0.0
+                Lnr_reward:  1792.100213343795  +/- 2.0931597604375614
+                Surr loss:  0.03933581213156382  +/- 0.004408811129861116
+                Sup loss:  0.03643400842944781 +/-0.001425056854459576
+                Sim err:  0.055769790706536974  +/- 0.0026943180628381668
+                Trace:  0.056678255647420885
+
+Train data:  456
+
+ Optimize data:  350
+Val_loss: 0.01256693433970213
+loss: 0.0072555123147234986
+Train score:  0.9965471017640084
+
+Data from snapshot:  15
+Data:  706
+                Sup reward:  1788.9357191502315  +/- 0.0
+                Lnr_reward:  1791.4082429345247  +/- 5.368264088753348
+                Surr loss:  0.020106717323263485  +/- 0.0002203192011380772
+                Sup loss:  0.019928318137923878 +/-0.0014588002982264528
+                Sim err:  0.054009090208301046  +/- 0.003524222198203165
+                Trace:  0.056678255647420885
+
+Train data:  706
+
+ Optimize data:  350
+Val_loss: 0.006752887275069952
+loss: 0.004387056356550313
+Train score:  0.9972430299967527
+
+Data from snapshot:  20
+Data:  956
+                Sup reward:  1794.6564414074353  +/- 0.0
+                Lnr_reward:  1789.3657642011938  +/- 2.7703116868319144
+                Surr loss:  0.017577779789765675  +/- 0.00031558100194949254
+                Sup loss:  0.016229797154664993 +/-0.0007026845699627867
+                Sim err:  0.05524546775680511  +/- 0.0011550208398413613
+                Trace:  0.056678255647420885
+
+Train data:  956
+
+ Optimize data:  350
+trial time:  132.35933828353882
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it5_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  5  results:
+For iteration:  5
+Lnr reward:  1784.2075042869758  +/-  13.497893925384805
+Surr loss:  0.11064086140443881  +/-  0.06311725565844728
+Sup reward:  1788.1023372454438  +/-  2.3169656325087775
+Sup loss:  0.043013479094952345  +/-  0.003991483039908525
+Sim err:  0.04499895454334385  +/-  0.004793321569642655
+Data used:  297.75  +/-  1.3149778198382918
+Total time:  134.90021395683289  +/-  1.2421053105652429
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it10_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  10  results:
+For iteration:  10
+Lnr reward:  1793.0863941999446  +/-  0.4831649083447623
+Surr loss:  0.023051686119288206  +/-  0.005571772009043378
+Sup reward:  1784.21850780259  +/-  1.6299653002148717
+Sup loss:  0.020448684537162386  +/-  0.005438009977165372
+Sim err:  0.04501707570883614  +/-  0.00441145338603151
+Data used:  838.0  +/-  10.708252269472673
+Total time:  134.90021395683289  +/-  1.2421053105652429
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it15_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  15  results:
+For iteration:  15
+Lnr reward:  1787.4293613076995  +/-  3.8420655366462424
+Surr loss:  0.01486591575667262  +/-  0.002328316436456402
+Sup reward:  1787.2326387946027  +/-  2.0392127457462372
+Sup loss:  0.014345244155265391  +/-  0.0020742678060761363
+Sim err:  0.044502035429678566  +/-  0.003993872077679834
+Data used:  1088.0  +/-  10.708252269472673
+Total time:  134.90021395683289  +/-  1.2421053105652429
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it20_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  20  results:
+For iteration:  20
+Lnr reward:  1786.868663340183  +/-  1.5296859414705999
+Surr loss:  0.010939672434081633  +/-  0.00226916945960006
+Sup reward:  1787.6761196556934  +/-  2.9057483145231795
+Sup loss:  0.010326866603766877  +/-  0.002014250370880096
+Sim err:  0.0446054242687875  +/-  0.004187391280401968
+Data used:  1338.0  +/-  10.708252269472673
+Total time:  134.90021395683289  +/-  1.2421053105652429
+
+
+
+
+
+
+Trial:  4
+[2022-12-19 18:38:59,699] Making new env: Hopper-v1
+        Iteration:  0
+        Iteration:  1
+Val_loss: 0.23292946815490723
+loss: 0.003914535976946354
+Trajs:  1
+Estimated covariance matrix: 
+[[ 0.04806864 -0.0146347  -0.04506774]
+ [-0.0146347   0.18460827  0.15375756]
+ [-0.04506774  0.15375756  0.44158694]]
+0.6742638498544693
+        Iteration:  2
+        Iteration:  3
+        Iteration:  4
+        Iteration:  5
+        Iteration:  6
+        Iteration:  7
+Val_loss: 0.017565658316016197
+loss: 0.006446740026981417
+Trajs:  5
+Estimated covariance matrix: 
+[[ 0.0084419  -0.00265601  0.00238265]
+ [-0.00265601  0.02866703  0.00410642]
+ [ 0.00238265  0.00410642  0.02155679]]
+0.058665712084621194
+        Iteration:  8
+        Iteration:  9
+        Iteration:  10
+        Iteration:  11
+        Iteration:  12
+        Iteration:  13
+        Iteration:  14
+        Iteration:  15
+        Iteration:  16
+        Iteration:  17
+        Iteration:  18
+        Iteration:  19
+Val_loss: 0.051007743924856186
+loss: 0.006196455403244326
+Train score:  0.995877705514431
+
+Data from snapshot:  5
+Data:  223
+                Sup reward:  1788.0565792617556  +/- 0.0
+                Lnr_reward:  1789.6370791084892  +/- 1.619330636072038
+                Surr loss:  0.05615811546643575  +/- 0.0005130092513628633
+                Sup loss:  0.04767685756087303 +/-0.001989820355062059
+                Sim err:  0.060644881131804385  +/- 0.0005742062855220477
+                Trace:  0.058665712084621194
+
+Train data:  223
+
+ Optimize data:  50
+Val_loss: 0.018386419862508774
+loss: 0.003948596988561955
+Train score:  0.9977585703600198
+
+Data from snapshot:  10
+Data:  473
+                Sup reward:  1788.7050833755197  +/- 0.0
+                Lnr_reward:  1786.7175584826045  +/- 4.301190864671071
+                Surr loss:  0.02001116642107566  +/- 0.006188652261010454
+                Sup loss:  0.01647611769537131 +/-0.0005210898721671217
+                Sim err:  0.05822871365694715  +/- 0.000594290674710624
+                Trace:  0.058665712084621194
+
+Train data:  473
+
+ Optimize data:  350
+Val_loss: 0.004803522489964962
+loss: 0.0026142112191212593
+Train score:  0.9985929835820571
+
+Data from snapshot:  15
+Data:  723
+                Sup reward:  1793.87999990004  +/- 0.0
+                Lnr_reward:  1781.888089688261  +/- 1.506530849655732
+                Surr loss:  0.009327534275750319  +/- 2.4381612940503477e-05
+                Sup loss:  0.009103641534845034 +/-0.00047948162219289814
+                Sim err:  0.05889396511140713  +/- 0.001232153099215734
+                Trace:  0.058665712084621194
+
+Train data:  723
+
+ Optimize data:  350
+Val_loss: 0.007050609216094017
+loss: 0.0030852623003659956
+Train score:  0.997761431382969
+
+Data from snapshot:  20
+Data:  973
+                Sup reward:  1783.4508412719947  +/- 0.0
+                Lnr_reward:  1783.313374377885  +/- 1.2824205010517782
+                Surr loss:  0.013696090007821718  +/- 0.00019035545080918438
+                Sup loss:  0.012479784588019053 +/-0.0003473594450413755
+                Sim err:  0.05955654591133133  +/- 0.001341961411036033
+                Trace:  0.058665712084621194
+
+Train data:  973
+
+ Optimize data:  350
+trial time:  134.88533401489258
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it5_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  5  results:
+For iteration:  5
+Lnr reward:  1785.2934192512785  +/-  10.511664737911904
+Surr loss:  0.09974431221683819  +/-  0.05008999462277947
+Sup reward:  1788.0931856487064  +/-  1.794737194426785
+Sup loss:  0.04394615478813648  +/-  0.003229403360279256
+Sim err:  0.04812813986103596  +/-  0.004855652351070942
+Data used:  292.8  +/-  5.053711507397311
+Total time:  134.8972379684448  +/-  0.9621352389490331
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it10_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  10  results:
+For iteration:  10
+Lnr reward:  1791.8126270564767  +/-  1.3276112883567017
+Surr loss:  0.022443582179645698  +/-  0.004358506211291239
+Sup reward:  1785.115822917176  +/-  1.5489501421308438
+Sup loss:  0.01965417116880417  +/-  0.004286539746642971
+Sim err:  0.047659403298458344  +/-  0.004319542531004412
+Data used:  835.0  +/-  8.820430828479978
+Total time:  134.8972379684448  +/-  0.9621352389490331
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it15_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  15  results:
+For iteration:  15
+Lnr reward:  1786.321106983812  +/-  3.175705937133776
+Surr loss:  0.013758239460488162  +/-  0.0021165021223926864
+Sup reward:  1788.5621110156903  +/-  2.0645894410491414
+Sup loss:  0.013296923631181321  +/-  0.0019184702447549837
+Sim err:  0.04738042136602428  +/-  0.004225602217705208
+Data used:  1085.0  +/-  8.820430828479978
+Total time:  134.8972379684448  +/-  0.9621352389490331
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it20_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  20  results:
+For iteration:  20
+Lnr reward:  1786.1576055477235  +/-  1.3818707001514934
+Surr loss:  0.01149095594882965  +/-  0.0018421160483156058
+Sup reward:  1786.8310639789536  +/-  2.404192807826078
+Sup loss:  0.010757450200617313  +/-  0.0016185564456734345
+Sim err:  0.047595648597296265  +/-  0.004411574432775396
+Data used:  1335.0  +/-  8.820430828479978
+Total time:  134.8972379684448  +/-  0.9621352389490331
+
+
+
+
+
+
+Trial:  5
+[2022-12-19 18:41:14,595] Making new env: Hopper-v1
+        Iteration:  0
+        Iteration:  1
+Val_loss: 0.0023217902053147554
+loss: 0.004666222725063562
+Trajs:  1
+Estimated covariance matrix: 
+[[ 0.07073945 -0.08453998  0.0052981 ]
+ [-0.08453998  0.16104247  0.0053743 ]
+ [ 0.0052981   0.0053743   0.05081063]]
+0.2825925424695015
+        Iteration:  2
+        Iteration:  3
+        Iteration:  4
+        Iteration:  5
+        Iteration:  6
+        Iteration:  7
+Val_loss: 0.014623801223933697
+loss: 0.006293253232556653
+Trajs:  5
+Estimated covariance matrix: 
+[[ 0.00416153 -0.00264488 -0.00038706]
+ [-0.00264488  0.01232142  0.00144666]
+ [-0.00038706  0.00144666  0.01320619]]
+0.02968915072269738
+        Iteration:  8
+        Iteration:  9
+        Iteration:  10
+        Iteration:  11
+        Iteration:  12
+        Iteration:  13
+        Iteration:  14
+        Iteration:  15
+        Iteration:  16
+        Iteration:  17
+        Iteration:  18
+        Iteration:  19
+Val_loss: 0.023858262225985527
+loss: 0.007385732065729074
+Train score:  0.9952392200939357
+
+Data from snapshot:  5
+Data:  250
+                Sup reward:  1788.6192334402492  +/- 0.0
+                Lnr_reward:  1690.5863415043607  +/- 21.23724721927602
+                Surr loss:  0.4693111975987752  +/- 0.42876292546179495
+                Sup loss:  0.039150560895601906 +/-0.002604543613598611
+                Sim err:  0.028451136910571353  +/- 0.0009636869886152617
+                Trace:  0.02968915072269738
+
+Train data:  250
+
+ Optimize data:  50
+Val_loss: 0.006138894706964493
+loss: 0.0040643147771295745
+Train score:  0.9981693353038281
+
+Data from snapshot:  10
+Data:  500
+                Sup reward:  1781.8718442849065  +/- 0.0
+                Lnr_reward:  1783.8434002782217  +/- 9.283473347910961
+                Surr loss:  0.014148196515937647  +/- 0.005598463078226448
+                Sup loss:  0.01202428030471007 +/-0.0022196533819267587
+                Sim err:  0.029297353095941597  +/- 0.0019420727895458195
+                Trace:  0.02968915072269738
+
+Train data:  500
+
+ Optimize data:  350
+Val_loss: 0.00742747588083148
+loss: 0.0055575732644019505
+Train score:  0.9968673700932413
+
+Data from snapshot:  15
+Data:  750
+                Sup reward:  1786.491861949004  +/- 0.0
+                Lnr_reward:  1791.408898693897  +/- 1.516019813404502
+                Surr loss:  0.02987932910521825  +/- 0.0022509664696563725
+                Sup loss:  0.020112058768669765 +/-0.0029507154750568927
+                Sim err:  0.030717940326432682  +/- 0.0003124288027492617
+                Trace:  0.02968915072269738
+
+Train data:  750
+
+ Optimize data:  350
+Val_loss: 0.002980475313961506
+loss: 0.002553113308294039
+Train score:  0.9987204669741914
+
+Data from snapshot:  20
+Data:  1000
+                Sup reward:  1792.0606804763493  +/- 0.0
+                Lnr_reward:  1784.2466400844507  +/- 1.9632661351875431
+                Surr loss:  0.0073842997662723064  +/- 0.0002529339506893223
+                Sup loss:  0.007612785790115595 +/-0.0007067345470003818
+                Sim err:  0.03010433156784049  +/- 0.0019561769954103037
+                Trace:  0.02968915072269738
+
+Train data:  1000
+
+ Optimize data:  350
+trial time:  134.52390313148499
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it5_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  5  results:
+For iteration:  5
+Lnr reward:  1769.5089062934587  +/-  17.96703220782671
+Surr loss:  0.1613387931138277  +/-  0.07393613314550374
+Sup reward:  1788.1808602806302  +/-  1.4680172248497647
+Sup loss:  0.04314688913938072  +/-  0.0027552718473627257
+Sim err:  0.04484863936929185  +/-  0.005145227236153616
+Data used:  294.0  +/-  4.297285965195552
+Total time:  134.8350154956182  +/-  0.7880404694407117
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it10_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  10  results:
+For iteration:  10
+Lnr reward:  1790.4844225934341  +/-  1.7143983155305749
+Surr loss:  0.02106101790236102  +/-  0.0038178355443104013
+Sup reward:  1784.5751598117977  +/-  1.3754324006369787
+Sup loss:  0.018382522691455155  +/-  0.003723802516645775
+Sim err:  0.044599061598038885  +/-  0.004669545635437164
+Data used:  837.5  +/-  7.623428799868644
+Total time:  134.8350154956182  +/-  0.7880404694407117
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it15_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  15  results:
+For iteration:  15
+Lnr reward:  1787.169072268826  +/-  2.7280855174805274
+Surr loss:  0.016445087734609842  +/-  0.0031946112654822065
+Sup reward:  1788.2170695045759  +/-  1.720680103269193
+Sup loss:  0.014432779487429395  +/-  0.0019349041094706848
+Sim err:  0.044603341192759015  +/-  0.0044289935301668505
+Data used:  1087.5  +/-  7.623428799868644
+Total time:  134.8350154956182  +/-  0.7880404694407117
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it20_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  20  results:
+For iteration:  20
+Lnr reward:  1785.839111303845  +/-  1.1723834716829524
+Surr loss:  0.01080651325173676  +/-  0.001652489887789048
+Sup reward:  1787.7026667285197  +/-  2.147817510370156
+Sup loss:  0.010233339465533692  +/-  0.0014216804755349355
+Sim err:  0.044680429092386974  +/-  0.004633914552414835
+Data used:  1337.5  +/-  7.623428799868644
+Total time:  134.8350154956182  +/-  0.7880404694407117
+
+
+
+
+
+
+Trial:  6
+[2022-12-19 18:43:29,131] Making new env: Hopper-v1
+        Iteration:  0
+        Iteration:  1
+Val_loss: 0.03530091047286987
+loss: 0.002307445975020528
+Trajs:  1
+Estimated covariance matrix: 
+[[ 0.30843106 -0.16296168 -0.36738148]
+ [-0.16296168  0.18511628  0.18432197]
+ [-0.36738148  0.18432197  0.58675325]]
+1.080300584435463
+        Iteration:  2
+        Iteration:  3
+        Iteration:  4
+        Iteration:  5
+        Iteration:  6
+        Iteration:  7
+Val_loss: 0.03876551613211632
+loss: 0.007602092215513929
+Trajs:  5
+Estimated covariance matrix: 
+[[ 0.01546731 -0.00126878  0.00087092]
+ [-0.00126878  0.03397562 -0.00591464]
+ [ 0.00087092 -0.00591464  0.03301106]]
+0.08245398923754692
+        Iteration:  8
+        Iteration:  9
+        Iteration:  10
+        Iteration:  11
+        Iteration:  12
+        Iteration:  13
+        Iteration:  14
+        Iteration:  15
+        Iteration:  16
+        Iteration:  17
+        Iteration:  18
+        Iteration:  19
+Val_loss: 0.03171795234084129
+loss: 0.005500744125738586
+Train score:  0.9967542081139982
+
+Data from snapshot:  5
+Data:  205
+                Sup reward:  1781.429468985287  +/- 0.0
+                Lnr_reward:  1669.173010679119  +/- 17.30515611353115
+                Surr loss:  0.3035004138946533  +/- 0.059671908117865054
+                Sup loss:  0.05615245799223582 +/-0.002883544287780596
+                Sim err:  0.08170153505142061  +/- 0.003202892762489292
+                Trace:  0.08245398923754692
+
+Train data:  205
+
+ Optimize data:  50
+Val_loss: 0.007862375117838383
+loss: 0.005105441655823082
+Train score:  0.9978496003895998
+
+Data from snapshot:  10
+Data:  447
+                Sup reward:  1784.6631376473556  +/- 0.0
+                Lnr_reward:  1792.603463780072  +/- 1.6850932728788504
+                Surr loss:  0.019990117599566776  +/- 0.0011967102874184078
+                Sup loss:  0.020130960270762444 +/-0.0003477083182729012
+                Sim err:  0.08452686611622033  +/- 0.0040040805274777
+                Trace:  0.08245398923754692
+
+Train data:  447
+
+ Optimize data:  350
+Val_loss: 0.008198830299079418
+loss: 0.005593779173277296
+Train score:  0.9975430150516331
+
+Data from snapshot:  15
+Data:  697
+                Sup reward:  1777.3964916506516  +/- 0.0
+                Lnr_reward:  1767.6514028753443  +/- 35.668867492186195
+                Surr loss:  0.07807827368378639  +/- 0.0667286014257957
+                Sup loss:  0.018934835369388264 +/-0.0006737410256869485
+                Sim err:  0.08188205232634194  +/- 0.0037364941575496013
+                Trace:  0.08245398923754692
+
+Train data:  697
+
+ Optimize data:  350
+Val_loss: 0.013906583189964294
+loss: 0.008922252224424691
+Train score:  0.995797673240304
+
+Data from snapshot:  20
+Data:  947
+                Sup reward:  1769.442468306814  +/- 0.0
+                Lnr_reward:  1785.1065239368008  +/- 1.5393577098178763
+                Surr loss:  0.02322121026615302  +/- 0.0022635076069525573
+                Sup loss:  0.0243627621481816 +/-0.002261785900428906
+                Sim err:  0.08120185548235707  +/- 0.0018694056222364993
+                Trace:  0.08245398923754692
+
+Train data:  947
+
+ Optimize data:  350
+trial time:  132.8688268661499
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it5_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  5  results:
+For iteration:  5
+Lnr reward:  1755.1752069199815  +/-  20.881488028155253
+Surr loss:  0.18164759608251707  +/-  0.06570485008048775
+Sup reward:  1787.2163758098668  +/-  1.5714863265930517
+Sup loss:  0.045004827546931456  +/-  0.00297900176588719
+Sim err:  0.0501133387524531  +/-  0.006828367653961712
+Data used:  288.42857142857144  +/-  6.650661058647238
+Total time:  134.55413140569414  +/-  0.7228228404950059
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it10_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  10  results:
+For iteration:  10
+Lnr reward:  1790.7871427629539  +/-  1.480216414134316
+Surr loss:  0.020908032144818987  +/-  0.0032302846781022358
+Sup reward:  1784.5877280740203  +/-  1.16252048658551
+Sup loss:  0.018632299488499055  +/-  0.0031570837595404303
+Sim err:  0.050303033672064804  +/-  0.006936141003633734
+Data used:  831.7142857142857  +/-  8.659468491646766
+Total time:  134.55413140569414  +/-  0.7228228404950059
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it15_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  15  results:
+For iteration:  15
+Lnr reward:  1784.380833784043  +/-  3.6180533418166596
+Surr loss:  0.025249828584492207  +/-  0.009209404631934216
+Sup reward:  1786.671272668301  +/-  2.122334129550852
+Sup loss:  0.015075930327709234  +/-  0.001757220637732104
+Sim err:  0.04992887135469943  +/-  0.006509430729898835
+Data used:  1081.7142857142858  +/-  8.659468491646766
+Total time:  134.55413140569414  +/-  0.7228228404950059
+
+
+
+
+Saving to:  results/experts/Hopper-v1.pkl/test_dart/arch64-64_envnameHopper-v1_epochs100_it20_iters5-10-15-20_lr0.01_partition50_t500_update1-7_data/data.csv
+Iteration  20  results:
+For iteration:  20
+Lnr reward:  1785.7344559656958  +/-  0.9963565198116732
+Surr loss:  0.012580041396653368  +/-  0.002257414093030997
+Sup reward:  1785.0940669539903  +/-  3.17803060704012
+Sup loss:  0.012251828420197678  +/-  0.0023490411567667893
+Sim err:  0.04989777571952556  +/-  0.006523701416367537
+Data used:  1331.7142857142858  +/-  8.659468491646766
+Total time:  134.55413140569414  +/-  0.7228228404950059

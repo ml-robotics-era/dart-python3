@@ -36,7 +36,7 @@ def main():
     test.run_trials(title, TRIALS)
     end_time = timer.time()
 
-    print "\n\n\nTotal time: " + str(end_time - start_time) + '\n\n'
+    print("\n\n\nTotal time: " ,str(end_time - start_time) ,'\n\n')
 
 
 
@@ -57,9 +57,9 @@ class Test(framework.Test):
             self.lnr.train()
             new_cov = noise.sample_covariance_trajs(self.env, self.lnr, trajs, 5, self.params['t'])
             new_cov = new_cov
-            print "Estimated covariance matrix: "
-            print new_cov
-            print np.trace(new_cov)
+            print("Estimated covariance matrix: ")
+            print(new_cov)
+            print(np.trace(new_cov))
             self.sup = GaussianSupervisor(self.net_sup, new_cov)
             return self.sup
         else:
@@ -85,7 +85,7 @@ class Test(framework.Test):
         self.optimized_data = 0
 
         for i in range(self.params['iters'][-1]):
-            print "\tIteration: " + str(i)
+            print("\tIteration: " ,str(i))
 
             self.sup = self.update_noise(i, trajs)
 
@@ -108,7 +108,7 @@ class Test(framework.Test):
             optimized_data = traj_snapshots[j]
             self.lnr.X, self.lnr.y = X, y
             self.lnr.train(verbose=True)
-            print "\nData from snapshot: " + str(self.params['iters'][j])
+            print("\nData from snapshot: ",str(self.params['iters'][j]))
             it_results = self.iteration_evaluation()
             
             results['sup_rewards'].append(it_results['sup_reward_mean'])
@@ -117,8 +117,8 @@ class Test(framework.Test):
             results['sup_losses'].append(it_results['sup_loss_mean'])
             results['sim_errs'].append(it_results['sim_err_mean'])
             results['data_used'].append(len(y) + optimized_data)
-            print "\nTrain data: " + str(len(y))
-            print "\n Optimize data: " + str(optimized_data)
+            print("\nTrain data: " ,str(len(y)))
+            print("\n Optimize data: " ,str(optimized_data))
 
         for key in results.keys():
             results[key] = np.array(results[key])

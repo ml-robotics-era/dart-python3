@@ -92,14 +92,14 @@ class Network:
 
 
                 if i == (self.iters - 1) or self.iters > 3 and i % (self.iters / 3) == 0:
-                    print "\t iter: " + str(i)
-                    print bcolors.WARNING + "\t Loss: " + str(loss) + bcolors.ENDC
+                    print("\t iter: " + str(i))
+                    print(bcolors.WARNING + "\t Loss: " + str(loss) + bcolors.ENDC)
                     losses.append(loss)
                 if i == (self.iters - 1) or self.iters > 3 and i % (self.iters / 3) == 0:
                     fd = {self.states: X_test, self.actions: y_test}
                     val_loss = self.sess.run(self.loss, feed_dict=fd)
                     val_losses.append(val_loss)
-                    print bcolors.OKGREEN + "\t Valid loss: " + str(val_loss) + bcolors.ENDC
+                    print(bcolors.OKGREEN + "\t Valid loss: " + str(val_loss) + bcolors.ENDC)
 
         return {"loss": losses, "val_loss": val_losses}
 
@@ -213,11 +213,11 @@ if __name__ == '__main__':
     x = x.reshape((n, 1))
     preds = net.predict(x)
 
-    print "Score: " + str(net.score(X, Y))
+    print("Score: " + str(net.score(X, Y)))
 
 
-    print X.shape
-    print Y.shape
+    print(X.shape)
+    print(Y.shape)
     plt.scatter(X_test[:, 0], Y_test)
     plt.ylim(-5 ,5)
     plt.plot(x, np.sin(x).reshape(n),  color='r', linestyle='--')

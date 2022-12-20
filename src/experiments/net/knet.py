@@ -62,8 +62,8 @@ class Network:
             X, X_test, y, y_test = train_test_split(X, y, test_size=.05)
             history = self.model.fit(X, y, batch_size=self.bsize, epochs = self.epochs, 
                     verbose=0, validation_data=(X_test, y_test))
-            print "Val_loss: " + str(history.history['val_loss'][-1])
-            print "loss: " + str(history.history['loss'][-1])
+            print("Val_loss: " + str(history.history['val_loss'][-1]))
+            print("loss: " + str(history.history['loss'][-1]))
         else:
             X_test, y_test = np.array(X_test), np.array(y_test)
             history = self.model.fit(X, y, batch_size=self.bsize, epochs = self.epochs, 
@@ -118,11 +118,11 @@ if __name__ == '__main__':
     x = x.reshape((n, 1))
     preds = net.predict(x)
 
-    print "Score: " + str(net.score(X, Y))
+    print("Score: " + str(net.score(X, Y)))
 
 
-    print X.shape
-    print Y.shape
+    print(X.shape)
+    print(Y.shape)
     plt.scatter(X_test[:, 0], Y_test)
     plt.ylim(-5 ,5)
     plt.plot(x, np.sin(x).reshape(n),  color='r', linestyle='--')

@@ -2,7 +2,11 @@
 Author: John Schulman
 """
 
-import pickle, tensorflow as tf, tf_util, numpy as np
+
+import pickle, tensorflow as tf, numpy as np
+from .tf_util import lrelu, function
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 def load_policy(filename):
     with open(filename, 'rb') as f:
         data = pickle.loads(f.read())
@@ -27,7 +31,7 @@ def load_policy(filename):
 
         def apply_nonlin(x):
             if nonlin_type == 'lrelu':
-                return tf_util.lrelu(x, leak=.01) # openai/imitation nn.py:233
+                return lrelu(x, leak=.01) # openai/imitation nn.py:233
             elif nonlin_type == 'tanh':
                 return tf.tanh(x)
             else:
@@ -63,5 +67,5 @@ def load_policy(filename):
 
     obs_bo = tf.placeholder(tf.float32, [None, None])
     a_ba = build_policy(obs_bo)
-    policy_fn = tf_util.function([obs_bo], a_ba)
+    policy_fn = function([obs_bo], a_ba)
     return policy_fn

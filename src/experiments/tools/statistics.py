@@ -173,6 +173,6 @@ def collect_traj_beta(env, sup, lnr, T, beta, visualize=False):
         if done == True:
             break
      
-    print "Beta: " + str(beta), "empirical beta: " + str(float(count) / (t + 1))       
+    print("Beta: ", str(beta), "empirical beta: ",str(float(count) / (t + 1)))
     return states, intended_actions, taken_actions, reward
 

@@ -1,9 +1,9 @@
-gym==0.9.5
+gym==0.7.4
 numpy
 scipy
 matplotlib
 pandas
-sklearn
+scikit-learn
 keras==2.0.4
-tensorflow==1.1.0
+tensorflow==2.11.0
 mujoco-py==0.5.7

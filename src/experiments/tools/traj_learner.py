@@ -44,9 +44,9 @@ class Learner(Learner):
         history = self.est.fit(X, y, X_test, y_test)
         self.one_class_error = None
         if verbose == True:
-            print "Train score: " + str(self.est.score(X, y))
+            print("Train score: ", str(self.est.score(X, y)))
             if X_test is not None:
-                print "Test score: " + str(self.est.score(X_test, y_test))
+                print("Test score: ",str(self.est.score(X_test, y_test)))
         return history
 
     def make2d(self, data):
