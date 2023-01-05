@@ -1,1 +1,1 @@
-A Python3 implementation of DART https://github.com/BerkeleyAutomation/DART
+A Python3 implementation of [DART](https://github.com/BerkeleyAutomation/DART)
